@@ -1,0 +1,133 @@
+:root {
+  font-size: 62.5%;
+  --font-Poppins: 'Poppins', sans-serif;
+  --font-Roboto: 'Roboto', sans-serif;
+
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-base);
+  font-family: var(--font-Poppins);
+  box-sizing: border-box;
+  
+}
+
+header, main {
+  width: 37.5rem;
+  padding-inline: 2rem;
+}
+
+header {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+
+.header h1 {
+  display: flex;
+  gap: 1rem;
+  font-size: 2.4rem;
+  margin-bottom: .5rem;
+}
+
+.header p {
+  font-size: 1.6rem;
+  font-family: var(--font-Roboto);
+  font-weight: 500;
+  margin-bottom: 2.7rem;
+}
+
+form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+label input {
+  width: 33.5rem;
+  height: 4.4rem;
+  background-color: #24221f;
+  border: none;
+
+  margin-bottom: 2rem;
+}
+
+.checkbox {
+  width: 33.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lembrar {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 400;
+}
+
+#lembra {
+  width: 2rem;
+  margin: 0;
+}
+
+.checkbox a{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+button {
+  display: block;
+  width: 33.5rem;
+  height: 5.1rem;
+
+  color: var(--form-background);
+  font-weight: 600;
+  border-radius: .4rem;
+  background-color: var(--primary-color);
+
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+form a {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+.checkbox input{
+  display: none;
+}
+.checkbox input + label:before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: .4rem;
+  background-color: var(--background);
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox input:checked + label:before {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 5L7.50004 14.1667L3.33337 10' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
