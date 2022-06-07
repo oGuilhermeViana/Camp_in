@@ -59,12 +59,13 @@ form label {
 }
 
 label input {
-  width: 33.5rem;
+  width: calc(33.5rem - 3.2rem);
   height: 4.4rem;
   background-color: #24221f;
   border: none;
 
   margin-bottom: 2rem;
+  padding-left: 3.7rem;
 }
 
 .checkbox {
@@ -101,6 +102,7 @@ button {
   border-radius: .4rem;
   background-color: var(--primary-color);
 
+  margin-inline: 0;
   margin-top: 2rem;
   margin-bottom: 1.4rem;
 }
@@ -111,10 +113,11 @@ form a {
   text-align: center;
 }
 
-
+/* ===== CHECKBOX STYLES =============== */
 .checkbox input{
   display: none;
 }
+
 .checkbox input + label:before {
   content: "";
   width: 2rem;
@@ -130,4 +133,38 @@ form a {
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6667 5L7.50004 14.1667L3.33337 10' stroke='%23473404' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+/* 
+input {
+  padding-left: calc(5.7rem - 1.2rem);
+} */
+
+#email {
+  background-image: url(../images/mail.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 1.2rem;
+
+  
+}
+
+#email:focus {
+  background-image: url(../images/mail-focus.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 1.2rem;
+}
+
+#senha {
+  background-image: url(../images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 1.2rem;
+}
+
+#senha:focus {
+  background-image: url(../images/lock-focus.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-position-x: 1.2rem;
 }
